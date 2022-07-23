@@ -19,3 +19,11 @@
 
 !includedir /etc/mysql/conf.d/
 !includedir /etc/mysql/mysql.conf.d/
+
+[mysqld]
+max_connections=20
+thread_cache_size=128
+key_buffer_size = 512M
+read_buffer_size = 16M
+sort_buffer_size = 16M
+read_rnd_buffer_size = 32M
